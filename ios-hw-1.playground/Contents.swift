@@ -82,8 +82,9 @@ var isKuwaiti3 = true
 
 
 /*
+
 - - - -
-# المطلوب الثالث
+ # المطلوب الثالث
 * قم بمقارنة معلومات كل شخص مع الشخص الاخر
  * قارن الاعمار اذا كانت متساوية ام لا
  * قارن منطقة السكن اذا كانت متساوية ام لا
@@ -92,9 +93,11 @@ var isKuwaiti3 = true
  * قارن اذا عمر الاشخاص يساوي  ١٧
  * قارن اذا عمر الاشخاص لا يساوي  ١٧
 
+ */
+
  
- // Person 1 with Person 2
- 
+// Person 1 with Person 2
+
 firstName1 > firstName2
 lastName1 > lastName2
 email1 > email2
@@ -103,7 +106,6 @@ age1 > age2
 country1 > country2
 area1 > area2
 password > password2
-isKuwaiti > isKuwaiti2
  
  firstName1 < firstName2
  lastName1 < lastName2
@@ -113,7 +115,6 @@ isKuwaiti > isKuwaiti2
  country1 < country2
  area1 < area2
  password < password2
- isKuwaiti < isKuwaiti2
  
  firstName1 >= firstName2
  lastName1 >= lastName2
@@ -123,7 +124,6 @@ isKuwaiti > isKuwaiti2
  country1 >= country2
  area1 >= area2
  password >= password2
- isKuwaiti >= isKuwaiti2
  
  firstName1 <= firstName2
  lastName1 <= lastName2
@@ -133,7 +133,6 @@ isKuwaiti > isKuwaiti2
  country1 <= country2
  area1 <= area2
  password <= password2
- isKuwaiti <= isKuwaiti2
  
  firstName1 == firstName2
  lastName1 == lastName2
@@ -166,8 +165,7 @@ isKuwaiti > isKuwaiti2
  country1 > country3
  area1 > area3
  password > password3
- isKuwaiti > isKuwaiti3
-  
+
   firstName1 < firstName3
   lastName1 < lastName3
   email1 < email3
@@ -176,7 +174,6 @@ isKuwaiti > isKuwaiti2
   country1 < country3
   area1 < area3
   password < password3
-  isKuwaiti < isKuwaiti3
   
   firstName1 >= firstName3
   lastName1 >= lastName3
@@ -186,8 +183,7 @@ isKuwaiti > isKuwaiti2
   country1 >= country3
   area1 >= area3
   password >= password3
-  isKuwaiti >= isKuwaiti3
-  
+ 
   firstName1 <= firstName3
   lastName1 <= lastName3
   email1 <= email3
@@ -196,7 +192,6 @@ isKuwaiti > isKuwaiti2
   country1 <= country3
   area1 <= area3
   password <= password3
-  isKuwaiti <= isKuwaiti3
   
   firstName1 == firstName3
   lastName1 == lastName3
@@ -229,7 +224,6 @@ isKuwaiti > isKuwaiti2
  country2 > country3
  area2 > area3
  password2 > password3
- isKuwaiti2 > isKuwaiti3
   
   firstName2 < firstName3
   lastName2 < lastName3
@@ -239,7 +233,6 @@ isKuwaiti > isKuwaiti2
   country2 < country3
   area2 < area3
   password2 < password3
-  isKuwaiti2 < isKuwaiti3
   
   firstName2 >= firstName3
   lastName2 >= lastName3
@@ -249,7 +242,6 @@ isKuwaiti > isKuwaiti2
   country2 >= country3
   area2 >= area3
   password2 >= password3
-  isKuwaiti2 >= isKuwaiti3
   
   firstName2 <= firstName3
   lastName2 <= lastName3
@@ -259,7 +251,6 @@ isKuwaiti > isKuwaiti2
   country2 <= country3
   area2 <= area3
   password2 <= password3
-  isKuwaiti2 <= isKuwaiti3
   
   firstName2 == firstName3
   lastName2 == lastName3
@@ -282,21 +273,36 @@ isKuwaiti > isKuwaiti2
   isKuwaiti2 != isKuwaiti3
  
  // Person 1 age comparing
- age1 > 17
- age1 < 17
+ age1 > 18
+ age1 < 18
  age1 == 17
  age1 != 17
  
  // Person 2 age comparing
- age2 > 17
- age2 < 17
+ age2 > 18
+ age2 < 18
  age2 == 17
  age2 != 17
 
  // Person 3 age comparing
- age3 > 17
- age3 < 17
+ age3 > 18
+ age3 < 18
  age3 == 17
  age3 != 17
  
- */
+ // Bouns
+age1 == age2 && age2 == age3 && age3 == age1
+
+age1 > 18 && age2 > 18 && age3 > 18
+age1 < 18 && age2 < 18 && age3 < 18
+
+age1 > 17 && age2 > 17 && age3 > 17
+age1 < 17 && age2 < 17 && age3 < 17
+
+age1 > 18 || age2 > 18 || age3 > 18
+age1 < 18 || age2 < 18 || age3 < 18
+
+age1 > 17 || age2 > 17 || age3 > 17
+age1 < 17 || age2 < 17 || age3 < 17
+
+ 
